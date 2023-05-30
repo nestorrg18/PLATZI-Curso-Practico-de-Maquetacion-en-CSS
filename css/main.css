@@ -97,14 +97,15 @@ nav {
     justify-content: center;
 }
 .home-main .info-container {
-    width: 700px;
-    height: 200px;
+    width: 800px;
+    height: auto;
     margin-bottom: 100px;
     /* border: 1px solid wheat; */
     text-align: center;
 }
 .info-container .title {
     padding: 5px 10px;
+    font-family: 'Roboto Mono', monospace;
     font-size: 4rem;
     font-weight: 500;
     color: white;
