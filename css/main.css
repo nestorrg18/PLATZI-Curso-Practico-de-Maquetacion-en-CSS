@@ -18,7 +18,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: 'Roboto Mono', monospace;
 }
 /* ! home */
 a {
@@ -97,32 +97,30 @@ nav {
     justify-content: center;
 }
 .home-main .info-container {
-    width: 800px;
+    width: min(90%, 800px);
     height: auto;
     margin-bottom: 100px;
-    /* border: 1px solid wheat; */
     text-align: center;
 }
 .info-container .title {
     padding: 5px 10px;
-    font-family: 'Roboto Mono', monospace;
     font-size: 4rem;
     font-weight: 500;
     color: white;
     background-color: #000000bb;
-    border: 1px solid rgb(224, 153, 61);
+    border-top: 1px solid rgb(224, 153, 61);
     border-radius: 5px;
 }
 .info-container a {
-    display: block;
+    display: inline-block;
     margin: 40px auto 0;
     padding: 10px;
     height: auto;
-    width: 180px;
+    width: auto;
     font-size: 3rem;
     color: white;
     background-color: #000000ba; ;
-    border: 1px solid rgb(224, 153, 61);
+    border-bottom: 1px solid rgb(224, 153, 61);
     border-radius: 5px;
 }
 .info-container a:hover {
@@ -139,7 +137,6 @@ nav {
     }
     .info-container .title {
         font-size: 2.4rem;
-        -webkit-text-stroke: 0;
     }
     .info-container a {
         font-size: 2rem;
@@ -154,5 +151,14 @@ nav {
         align-items: center;
         justify-content: center;
         margin-right: 1px;
+    }
+    .home-header .header-icons-container {
+        justify-content: center;
+    }
+    .home-header .header-icons-container .icons {
+        margin-right: 20px;
+    }
+    .home-nav .nav-logo-container img {
+        margin-left: 15%;
     }
 }
