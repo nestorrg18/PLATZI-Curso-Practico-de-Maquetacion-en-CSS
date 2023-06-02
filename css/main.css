@@ -54,6 +54,7 @@ a {
 .icons span:hover {
     opacity: 0.7;
     color: rgb(224, 153, 61);
+    transition: color .4s;
 }
 nav {
     display: grid;
@@ -88,6 +89,9 @@ nav {
 }
 .home-nav .profile-link a:hover {
     color: rgb(224, 153, 61);
+    transform: scale(1.1);
+    transition: transform .4s;
+    transition: color .4s;
 }
 .home-main {
     width: 100%;
@@ -125,6 +129,9 @@ nav {
 }
 .info-container a:hover {
     color: rgb(224, 153, 61);
+    transform: scale(1.1);
+    transition: transform .4s;
+    transition: color .4s;
 }
 @media (max-width: 764px) {
     .home-header .header-icons-container .icons {
