@@ -175,37 +175,33 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     height: auto;
     padding: 16px 15% 40px;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 2fr;
     grid-template-rows: 2fr;
     background-color: #d6d6d6;
 }
-.last-blog--container .picture {
+.last-blog--container .picture--container {
     grid-column: 1;
     display: grid;
     align-items: center;
-    /* justify-items: center; */
 }
 .last-blog--container h3{
     margin-bottom: 15px;
     font-size: 2rem;
     grid-row: 1;
 }
-.picture--container {
-    max-width: 600px;
-}
 .picture--container img {
-    width: 100%;
+    width: 90%;
 }
 .last-blog--container .last-blog--info {
     grid-column: 2;
-    padding-left: 20px;
+    /* padding-left: 20px; */
 }
 .last-blog--container .last-blog--info h2 {
     margin: 18px 0;
     font-size: 3rem;
 }
 .last-blog--container .last-blog--info p {
-    margin-bottom: 12px;
+    margin-bottom: 24px;
     font-size: 1.6rem;
     max-height: 200px;
     overflow-y: hidden;
