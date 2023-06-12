@@ -4,6 +4,8 @@
     --light-orange: #BF8450;
     --orange: #A65C41;
     --brown: #73332D;
+    --black:#111213 ;
+    --light-black:#212121 ;
 }
 *{
     box-sizing: border-box;
@@ -46,7 +48,7 @@ header .header-icons-container {
     width: 100%;
     height: 50px;
     display: grid;
-    background: #212121;
+    background: var(--light-black);
 }
 header .header-icons-container .icons {
     width: 300px;
@@ -71,7 +73,7 @@ nav {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     height: 90px;
-    background-color: #111213
+    background-color: var(--black)
     /* background: var(--lt-color-gray-900); */
 }
 nav .nav-logo-container {
@@ -82,7 +84,7 @@ nav .nav-logo-container {
 nav .nav-logo-container img {
     width: 100%;
     margin-top: 10px;
-    filter: hue-rotate(76deg) invert(1) saturate(151%) brightness(150%);
+    filter:hue-rotate(69deg) invert(1) saturate(133%) brightness(111%);
 }
 nav .profile-link {
     display: flex;
@@ -95,6 +97,7 @@ nav .profile-link a {
     color: black;
     border-bottom: 5px solid var(--light-orange);
     font-size: 2rem;
+    font-weight: bold;
     background-color: white; ;
     border-radius: 5px;
 }
@@ -226,12 +229,14 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
 }
 .blogs--container .blog-item {
     width: 100%;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
 }
 .blog-item img {
     width: 100%;
 }
 .blog-item .blog--info {
     font-size: 1.6rem;
+    padding: 10px;
 }
 .blog--info h4 {
     margin: 12px 0 15px;
@@ -246,12 +251,16 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    background-color: var(--blue);
+    text-align: center;
+    background-color: var(--brown);
     color: white;
-    border-top: 30px solid var(--light-blue);
+    border-top: 30px solid var(--orange);
+}
+.blogs-footer div{
+    padding: 15px 10px;
 }
 /* ?Media queries */
-@media (max-width: 764px) {
+@media (max-width: 768px) {
     header .header-icons-container .icons {
         width: auto;
     }
@@ -265,6 +274,12 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     }
     .info-container a {
         font-size: 2rem;
+    }
+    .recent-blogs {
+        width: 90%;
+    }
+    .blogs--container {
+        grid-template-columns: 1fr 1fr;
     }
 }
 @media (max-width: 430px) {
@@ -285,5 +300,20 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     }
     nav .nav-logo-container img {
         margin-left: 15%;
+    }
+    .picture--container img {
+        width: 100%;
+    }
+    .last-blog--container {
+        grid-template-columns: 1fr;
+    }
+    .last-blog--container .last-blog--info {
+        grid-column: 1;
+    }
+    .blogs--container {
+        grid-template-columns: 1fr;
+    }
+    .blogs-footer {
+        height: auto;
     }
 }
