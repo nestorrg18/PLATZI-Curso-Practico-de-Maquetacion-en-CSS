@@ -259,6 +259,8 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
 .blogs-footer div{
     padding: 15px 10px;
 }
+/* ! Blog */
+
 /* ?Media queries */
 @media (max-width: 768px) {
     header .header-icons-container .icons {
