@@ -22,6 +22,7 @@ body {
 .home-body {
     height: 100vh;
     background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png);
+    /* background-image: url(https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -262,14 +263,16 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
 .blog-picture--container {
     padding: 0 15% 40px;
     background-color: var(--light-blue);
-    background-color: #6b98bf5b;
+    background-color:#bf84504d;
 }
 .blog-picture--container img {
     display: block;
     margin: 0 auto;
     width: 100%;
     max-width: 1024px;
+    height: 350px;
     border-radius: 0  0 20px 20px ;
+    object-fit: cover;
 }
 .blog {
     margin: 0 auto;
@@ -287,6 +290,36 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
 .blog p {
     margin-bottom: 20px;
     font-size: 1.5rem;
+}
+.conection-options--container {
+    padding: 0 15% 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 250px;
+    background-color: #bf84504d ;
+}
+.conection-options--container article {
+    display: flex;
+    gap: 15px;
+    margin-top: 85px;
+    width: 49.5%;
+    min-width: 290px;
+    height: 100%;
+    font-size: 1.4rem;
+    text-align: initial;
+}
+.conection-options--container article img {
+    width: 100px;
+}
+.conection-options--container article a {
+    padding-bottom: 5px;
+    color: var(--black);
+    border-bottom: 1px solid var(--black);
+}
+.conection-options--container article p {
+    margin-top: 10px;
 }
 /* ?Media queries */
 @media (max-width: 768px) {
@@ -309,6 +342,9 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     }
     .blogs--container {
         grid-template-columns: 1fr 1fr;
+    }
+    .blog-picture--container img {
+        height: auto;
     }
 }
 @media (max-width: 430px) {
