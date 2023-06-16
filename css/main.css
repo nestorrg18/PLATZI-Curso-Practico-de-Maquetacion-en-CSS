@@ -1,6 +1,9 @@
 :root {
-    --blue: #1C4D8C;
-    --light-blue: #6B98BF;
+    --blue1: #C9D3F2;
+    --blue2: #3457BF;
+    --blue3: #172E73;
+    --blue4: #0B1840;
+    --blue5: #060E26;
     --light-orange: #BF8450;
     --orange: #A65C41;
     --brown: #73332D;
@@ -21,8 +24,8 @@ body {
 }
 .home-body {
     height: 100vh;
-    background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png);
-    /* background-image: url(https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg); */
+    /* background-image: url(https://www.nasa.gov/sites/default/files/thumbnails/image/web_first_images_release_0.png); */
+    background-image: url(https://starwalk.space/gallery/images/what-is-space/1920x1080.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -66,7 +69,7 @@ header .header-icons-container .icons {
 }
 .icons span:hover {
     opacity: 0.7;
-    color: var(--light-orange);
+    color: var(--blue2);
     transition: color .4s;
 }
 nav {
@@ -84,7 +87,7 @@ nav .nav-logo-container {
 nav .nav-logo-container img {
     width: 100%;
     margin-top: 10px;
-    filter:hue-rotate(69deg) invert(1) saturate(133%) brightness(111%);
+    filter:hue-rotate(253deg) invert(1) brightness(100%)
 }
 nav .profile-link {
     display: flex;
@@ -95,15 +98,15 @@ nav .profile-link {
 nav .profile-link a {
     padding: 5px 10px;
     color: black;
-    border-bottom: 5px solid var(--light-orange);
+    border-bottom: 5px solid var(--blue2);
     font-size: 2rem;
     font-weight: bold;
     background-color: white; ;
     border-radius: 5px;
 }
 nav .profile-link a:hover {
-    color: var(--orange);
-    border-color: var(--orange);
+    color: var(--blue3);
+    border-color: var(--blue3);
     transition: all .3s;
 }
 /* ! Home */
@@ -125,8 +128,8 @@ nav .profile-link a:hover {
     font-size: 4rem;
     font-weight: 500;
     color: white;
-    background-color: #000000bb;
-    border-top: 1px solid var(--light-orange);
+    border-bottom: 1px solid var(--blue1);
+    border-top: 1px solid var(--blue1);
     border-radius: 5px;
 }
 .info-container a {
@@ -137,15 +140,16 @@ nav .profile-link a:hover {
     width: auto;
     font-size: 3rem;
     color: white;
-    background-color: #000000ba; ;
-    border-bottom: 1px solid var(--light-orange);
+    border-bottom: 1px solid var(--blue1);
+    border-top: 1px solid var(--blue1);
     border-radius: 5px;
 }
 .info-container a:hover {
-    color: var(--light-orange);
+    color: var(--blue1);
+    border: 1px solid var(--blue1);
     transform: scale(1.1);
     transition: transform .4s;
-    transition: color .4s;
+    transition: all .4s;
 }
 /* ! Blogs */
 /* seguir con este diseño:
@@ -157,11 +161,11 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     padding: 10px 12px;
     font-size: 1.3rem;
     color: black;
-    border: 1px solid var(--light-blue);
+    border: 1px solid var(--blue2);
 }
 .read-more--link:hover {
-    color: var(--blue);
-    border-color: var(--blue);
+    color: var(--blue3);
+    border-color: var(--blue3);
     transition: all.3s;
 }
 .blogs-main {
@@ -218,7 +222,7 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     padding: 15px 0;
     font-size: 2rem;
     text-align: center;
-    border-bottom: 1px solid var(--light-blue);
+    border-bottom: 1px solid var(--blue2);
 }
 .blogs--container {
     margin: 12px 10px;
@@ -252,9 +256,9 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     justify-content: center;
     font-size: 2rem;
     text-align: center;
-    background-color: var(--brown);
+    background-color: var(--blue3);
     color: white;
-    border-top: 30px solid var(--orange);
+    border-top: 30px solid var(--blue5);
 }
 .blogs-footer div{
     padding: 15px 10px;
@@ -262,8 +266,7 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
 /* ! Blog */
 .blog-picture--container {
     padding: 0 15% 40px;
-    background-color: var(--light-blue);
-    background-color:#bf84504d;
+    background-color: var(--blue1);
 }
 .blog-picture--container img {
     display: block;
@@ -280,7 +283,7 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
 }
 .blog h3 {
     padding: 20px 0;
-    border-bottom: 1px solid var(--light-blue);
+    border-bottom: 1px solid var(--blue2);
     font-size: 2rem;
 }
 .blog h1 {
@@ -290,7 +293,7 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
 .blog p {
     margin-bottom: 20px;
     font-size: 1.5rem;
-}
+    line-height: 2.4rem;}
 .conection-options--container {
     padding: 0 15% 50px;
     display: flex;
@@ -298,7 +301,7 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     flex-wrap: wrap;
     width: 100%;
     min-height: 250px;
-    background-color: #bf84504d ;
+    background-color: var(--blue1) ;
 }
 .conection-options--container article {
     display: flex;
@@ -314,9 +317,15 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     width: 100px;
 }
 .conection-options--container article a {
-    padding-bottom: 5px;
+    padding: 5px;
     color: var(--black);
     border-bottom: 1px solid var(--black);
+    font-weight: bold;
+}
+.conection-options--container article a:hover {
+    color: var(--blue3);
+    border-bottom: 1px solid var(--blue3);
+    transition: all .3s;
 }
 .conection-options--container article p {
     margin-top: 10px;
@@ -380,5 +389,8 @@ https://raw.githubusercontent.com/degranda/Platzi-blog/master/pagina-blogs.png *
     }
     .blogs-footer {
         height: auto;
+    }
+    .blog {
+        width: 80%;
     }
 }
